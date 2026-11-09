@@ -8,7 +8,8 @@ Every task has: what Alex (or HC) actually said, and when it counts as done.
 ### 1. Pinned Instagram post 1, "We're Regulars"
 1. **Due:** moved to 10 Nov 20:30 (was 08:30). Alex's caption and the new image must be in FeedHive by 20:00.
 2. **Alex said:** "Wrong background text. Can we edit to 'Every Visit Matters.'?" / "Darken the image (reduce brightness -80) to make the Regulars stand out. Do you think the Regulars logo is too small?" / "I'd like to give [the caption] a quick edit tomorrow morning if that's okay?"
-3. **Done when:** background text is "Every Visit Matters.", brightness is at -80, logo size checked, Alex's caption is in FeedHive, and the new image is uploaded.
+3. **Design done 9 Nov:** saved in Canva, LinkedIn Posts page 24: background text "Every Visit Matters.", black overlay at 55% on the photo, logo twice as big.
+4. **Done when:** page 24 is downloaded as PNG and swapped into the FeedHive post, and Alex's caption is pasted in.
 
 ### 2. Instagram connected in FeedHive
 1. **HC said:** "Did we fix the instagram problem?"
