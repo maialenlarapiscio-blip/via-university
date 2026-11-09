@@ -1,0 +1,247 @@
+<title>Regulars HQ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Google+Sans+Flex:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column, phone first. Regulars' own brand: near black metallic ground, Instrument Serif Italic for display, Google Sans Flex for everything else. */
+:root{
+  --bg:#070707; --bg2:#0f0f0f; --panel:#141414; --line:#262626;
+  --fg:#ededea; --muted:#9a9893; --accent:#e9e3d4;
+  --urgent:#ff8a6b; --wait:#d9b25f; --ok:#7fc79a;
+  --display:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Google Sans Flex","Google Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+html{background:var(--bg)}
+body{background:linear-gradient(180deg,#050505 0%,#0d0d0d 35%,#171717 55%,#050505 100%);background-color:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header{display:flex;flex-direction:column;gap:6px}
+.kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(44px,11vw,72px);line-height:1;margin:0;text-wrap:balance}
+.tag{font-family:var(--display);font-style:italic;font-size:22px;color:var(--accent);margin:0}
+.lead{color:var(--muted);margin:6px 0 0;max-width:60ch}
+h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:32px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+section{display:flex;flex-direction:column}
+/* tasks */
+.groups{display:flex;flex-direction:column;gap:22px}
+.group h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600;display:flex;gap:8px;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.g-urgente .dot{background:var(--urgent)} .g-esperando .dot{background:var(--wait)} .g-semana .dot{background:var(--accent)}
+ul.tasks{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ul.tasks li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+ul.tasks li > div{min-width:0}
+ul.tasks input[type=checkbox]{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ok);cursor:pointer}
+.t-title{font-weight:500}
+.t-note{color:var(--muted);font-size:13.5px;margin-top:2px}
+li.done .t-title{text-decoration:line-through;color:var(--muted)}
+.t-quote{margin:6px 0 0;padding-left:10px;border-left:2px solid var(--wait);color:var(--fg);font-family:var(--display);font-style:italic;font-size:16px;line-height:1.35}
+.t-done{color:var(--ok);font-size:13px;margin-top:4px}
+.empty{color:var(--muted);font-size:14px;padding:12px 0;border-top:1px solid var(--line)}
+form.add{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+form.add input,form.add select{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:inherit;min-width:0}
+form.add input{flex:1 1 220px}
+button{background:var(--accent);color:#0b0b0b;border:0;border-radius:8px;padding:10px 14px;font:inherit;font-weight:500;cursor:pointer}
+button.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.status{font-size:13px;color:var(--muted);margin-top:8px}
+/* week */
+.week{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.day{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.day b{font-weight:600}
+.day .auto{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ok);border:1px solid #2f4a39;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+.day p{margin:0;color:var(--muted);font-size:14px}
+.day p strong{color:var(--fg);font-weight:500}
+/* prompts */
+.prompts{display:flex;flex-direction:column;gap:10px}
+.prompt{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.prompt .when{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.prompt code{font-family:var(--sans);font-size:14.5px;color:var(--fg);white-space:pre-wrap}
+.prompt button{align-self:flex-start;padding:6px 12px;font-size:13px}
+/* voice */
+.voice{width:100%;border-collapse:collapse;font-size:14px}
+.voice th,.voice td{text-align:left;padding:10px 8px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.voice th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.voice td:first-child{color:var(--ok)} .voice td:nth-child(2){color:var(--urgent)}
+.scroll{overflow-x:auto}
+/* links */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.links a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;color:var(--fg);text-decoration:none;background:var(--bg2)}
+.links a span{color:var(--muted);font-size:13px}
+.links a:hover{border-color:#444}
+.wall{border:1px solid #3a2a24;background:#160f0c;border-radius:12px;padding:14px 16px;color:var(--fg)}
+.wall p{margin:0} .wall p+p{margin-top:6px;color:var(--muted);font-size:14px}
+footer{color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion:no-preference){ul.tasks li{transition:opacity .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">Marketing and Brand · Regulars</div>
+    <h1>Regulars HQ</h1>
+    <p class="tag">Every Visit Matters.</p>
+    <p class="lead">Your control room. Tasks on top, with Alex's own words and what done looks like. Tick a task when it is finished; Claude sees it and refreshes the list every Monday.</p>
+  </header>
+
+  <section aria-labelledby="t-h">
+    <h2 id="t-h">Tasks</h2>
+    <p class="sub">Pulled from Slack, Brevo, Canva and FeedHive on 9 Nov.</p>
+    <div class="groups" id="groups">
+      <div class="empty" id="loading">Loading your tasks…</div>
+    </div>
+    <form class="add" id="addForm" hidden>
+      <label for="newTask" class="kicker" style="flex-basis:100%">Add a task</label>
+      <input id="newTask" type="text" placeholder="e.g. Welcome post for Fætter" required>
+      <select id="newGroup" aria-label="Group">
+        <option value="urgente">Today</option>
+        <option value="semana" selected>This week</option>
+        <option value="partners">Partners</option>
+        <option value="esperando">Waiting on others</option>
+        <option value="limpieza">Setup and cleanup</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+    <div class="status" id="status" role="status"></div>
+  </section>
+
+  <section aria-labelledby="w-h">
+    <h2 id="w-h">Your week</h2>
+    <p class="sub">09:00 to 15:00. Anything marked auto is started by Claude on a schedule.</p>
+    <div class="week">
+      <div class="day"><b>Monday</b><p><span class="auto">auto</span><br><strong>Claude</strong> reads #gtm-csm and #gtm-marketing, refreshes this list and proposes the week. <strong>You</strong> post the plan in the "Happy Monday" thread. 20 min.</p></div>
+      <div class="day"><b>Tuesday</b><p><strong>Copy.</strong> Instagram and LinkedIn captions and the newsletter draft, all from one shared message. 45 min.</p></div>
+      <div class="day"><b>Wednesday</b><p><strong>Visuals</strong> in the Canva Regulars folder. References from Savee. 60 min.</p></div>
+      <div class="day"><b>Thursday</b><p><strong>Review.</strong> Alex checklist, post in the right Slack thread with 5W1H, approve and schedule in FeedHive. Newsletter topic with HC. 30 min.</p></div>
+      <div class="day"><b>Friday</b><p><span class="auto">auto</span><br><strong>Results.</strong> Paste Instagram, LinkedIn and Brevo numbers; Claude says what worked and what to change. 15 min.</p></div>
+      <div class="day"><b>1st Monday</b><p><span class="auto">auto</span><br><strong>Month.</strong> Competitor check (MyLoyal, MitStempel, BakerPoints) and monthly report.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="p-h">
+    <h2 id="p-h">How to ask Claude</h2>
+    <p class="sub">Always inside the Regulars workspace (Cowork or Claude Code in VS Code). Copy, fill the brackets, send.</p>
+    <div class="prompts" id="prompts"></div>
+  </section>
+
+  <section aria-labelledby="v-h">
+    <h2 id="v-h">The voice in 30 seconds</h2>
+    <p class="sub">Alexander's rules for email, LinkedIn and Instagram.</p>
+    <div class="scroll">
+      <table class="voice">
+        <thead><tr><th>Say</th><th>Avoid</th><th>Where it matters</th></tr></thead>
+        <tbody>
+          <tr><td>memberships</td><td>card, stamp card</td><td>Everywhere</td></tr>
+          <tr><td>guest data, guest relationships</td><td>first party guest data</td><td>Newsletter</td></tr>
+          <tr><td>confident statement</td><td>question headline</td><td>Instagram, email</td></tr>
+          <tr><td>one clear action</td><td>eyebrow, filler</td><td>Email</td></tr>
+          <tr><td>No app. No physical cards.</td><td>urgency, exclamation marks</td><td>Instagram, LinkedIn</td></tr>
+          <tr><td>follow up with a new angle</td><td>repeating the first email</td><td>Outreach</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="l-h">
+    <h2 id="l-h">Connected tools</h2>
+    <p class="sub">Everything Regulars, one tap away.</p>
+    <div class="links">
+      <a href="https://www.canva.com/folder/FAHadjD2yAU" target="_blank" rel="noopener">Canva · Regulars<span>Brand, Social, Print, To review</span></a>
+      <a href="https://savee.com/maialenlarapiscio/boards/" target="_blank" rel="noopener">Savee<span>Only the "Regulars" boards</span></a>
+      <a href="https://app.brevo.com/" target="_blank" rel="noopener">Brevo<span>Client newsletter, drafts only</span></a>
+      <a href="https://app.feedhive.com/" target="_blank" rel="noopener">FeedHive<span>You schedule; Instagram needs reconnecting</span></a>
+      <a href="https://getregulars.slack.com/archives/C04Q4RMMAMP" target="_blank" rel="noopener">#gtm-marketing<span>Feedback and approvals</span></a>
+      <a href="https://getregulars.slack.com/archives/C05UENNUC22" target="_blank" rel="noopener">#gtm-csm<span>New partners</span></a>
+      <a href="https://getregulars.slack.com/archives/C0AMQGV0ASZ" target="_blank" rel="noopener">#gtm-outbound<span>Outreach and sales</span></a>
+      <a href="https://www.canva.com/folder/FAHadh9zzq8" target="_blank" rel="noopener">Brand Guidelines<span>Colors and type</span></a>
+    </div>
+  </section>
+
+  <section aria-labelledby="x-h">
+    <h2 id="x-h">Lupulus lives elsewhere</h2>
+    <div class="wall">
+      <p>Nothing from Lupulus enters Regulars HQ: no skills, no tone, no folders, no boards.</p>
+      <p>Lupulus has its own Claude project and its own Canva folder. If a Regulars chat starts to sound like hop water, switch projects.</p>
+    </div>
+  </section>
+
+  <footer>Regulars HQ · refreshed every Monday · source: regulars/TASKS.md and the Regulars Brain</footer>
+</div>
+
+<script>
+const PROMPTS=[
+ ["Monday","What's on today? Read TASKS.md and #gtm-csm, flag anything urgent, list new partners and propose the week as a table."],
+ ["New partner","Make the welcome post for [venue]: find their best photo, build the Welcome visual in Canva and give me Instagram and LinkedIn captions."],
+ ["Instagram","Write pinned post [Why / How] using Alex's caption as the base. Give me three hooks and tell me which one Alex would pick and why."],
+ ["LinkedIn","Turn this idea into a LinkedIn post for [owners / group CEOs]: [idea]. Add the 5W1H for the Slack thread."],
+ ["Newsletter","Prepare the newsletter for [date] from 08-newsletter-plan.md as a Brevo draft, and tell me the one action we ask clients to take."],
+ ["Outreach","Find [5] venues in [city] that fit Regulars and write the first email and two follow ups, each with a new angle."],
+ ["Before Alex sees it","Review this as Alex would, using his checklist: [text]."],
+ ["Friday","Here are this week's numbers: [paste]. Compare with 05-results.md and give me two changes for next week."]
+];
+const pr=document.getElementById('prompts');
+PROMPTS.forEach(([w,t],i)=>{
+  const d=document.createElement('div');d.className='prompt';
+  const a=document.createElement('div');a.className='when';a.textContent=w;
+  const c=document.createElement('code');c.id='pr'+i;c.textContent=t;
+  const b=document.createElement('button');b.className='ghost';b.type='button';b.textContent='Copy';
+  b.addEventListener('click',()=>{
+    navigator.clipboard?.writeText(t).then(()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copy',1500)})
+      .catch(()=>{const r=document.createRange();r.selectNodeContents(c);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, copy by hand'});
+  });
+  d.append(a,c,b);pr.append(d);
+});
+
+const GROUPS=[["urgente","Today"],["semana","This week"],["partners","Partner welcome posts"],["esperando","Waiting on others"],["limpieza","Setup and cleanup"]];
+const groupsEl=document.getElementById('groups'),statusEl=document.getElementById('status'),form=document.getElementById('addForm');
+let tasksCol=null;
+
+function render(docs){
+  groupsEl.textContent='';
+  if(!docs.length){const e=document.createElement('div');e.className='empty';e.textContent='No tasks yet. Add the first one below, or ask Claude to load them.';groupsEl.append(e);return;}
+  GROUPS.forEach(([key,label])=>{
+    const items=docs.filter(d=>(d.data().group||'semana')===key).sort((a,b)=>(a.data().order??99)-(b.data().order??99));
+    if(!items.length)return;
+    const open=items.filter(d=>!d.data().done).length;
+    const g=document.createElement('div');g.className='group g-'+key;
+    const h=document.createElement('h3');const dot=document.createElement('span');dot.className='dot';
+    h.append(dot,document.createTextNode(label+' · '+open+' open'));
+    const ul=document.createElement('ul');ul.className='tasks';
+    items.forEach(doc=>{
+      const t=doc.data();const li=document.createElement('li');if(t.done)li.className='done';
+      const cb=document.createElement('input');cb.type='checkbox';cb.id='t-'+doc.id;cb.checked=!!t.done;
+      cb.setAttribute('aria-label','Done: '+(t.title||''));
+      cb.addEventListener('change',async()=>{
+        cb.disabled=true;
+        try{await tasksCol.doc(doc.id).update({done:cb.checked,doneAt:cb.checked?new Date().toISOString():null});statusEl.textContent=''}
+        catch(e){cb.checked=!cb.checked;statusEl.textContent='Could not save. Check your connection and try again.'}
+        cb.disabled=false;
+      });
+      const body=document.createElement('div');
+      const ti=document.createElement('label');ti.className='t-title';ti.htmlFor=cb.id;ti.textContent=t.title||'';
+      body.append(ti);
+      if(t.alexSaid){const q=document.createElement('blockquote');q.className='t-quote';q.textContent=t.alexSaid;body.append(q)}
+      if(t.note){const n=document.createElement('div');n.className='t-note';n.textContent=t.note;body.append(n)}
+      if(t.doneWhen){const n=document.createElement('div');n.className='t-done';n.textContent='Done when: '+t.doneWhen;body.append(n)}
+      li.append(cb,body);ul.append(li);
+    });
+    g.append(h,ul);groupsEl.append(g);
+  });
+}
+
+(async()=>{
+  const timer=setTimeout(()=>{const l=document.getElementById('loading');if(l)l.textContent='The list is slow to load. Open the page signed in to Claude to see and tick tasks.'},10000);
+  const db=await claude.use('db');
+  if(!db){clearTimeout(timer);const l=document.getElementById('loading');if(l)l.textContent='Open this page signed in to Claude to see and tick your tasks.';return;}
+  tasksCol=db.collection('tasks');
+  tasksCol.onSnapshot(snap=>{clearTimeout(timer);render(snap.docs);form.hidden=false},
+    ()=>{clearTimeout(timer);const l=document.getElementById('loading');if(l)l.textContent='Could not load your tasks. Reload the page.'});
+})();
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const inp=document.getElementById('newTask'),sel=document.getElementById('newGroup');
+  const title=inp.value.trim();if(!title||!tasksCol)return;
+  try{await tasksCol.add({title,group:sel.value,done:false,order:50,createdAt:new Date().toISOString()});inp.value='';statusEl.textContent='Task added.'}
+  catch(err){statusEl.textContent='Could not add the task. You may not have edit access to this page.'}
+});
+</script>
