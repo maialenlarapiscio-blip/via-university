@@ -4,6 +4,7 @@ Decisions already made, with the reason, so Claude never re-proposes a rejected 
 
 | Date | Decision | Who | Why | Source |
 |---|---|---|---|---|
+| 9 Nov | All 24 LinkedIn Posts templates in Canva use "Every Visit Matters." as the background pattern (was "More Visits. More Revenue.") | Alex, Maia | One brand line everywhere | Canva, LinkedIn Posts |
 | 9 Nov | Pinned Instagram post 1 background text is "Every Visit Matters." and the photo is darkened (about -80) | Alex | So Regulars stands out | Pinned Posts thread |
 | 9 Nov | Anything related to sales goes in #gtm-outbound, not #gtm-marketing | Alex | Keep marketing threads clean | Happy Monday thread |
 | 9 Nov | Regulars and Lupulus are fully separate (Canva folders, projects, skills) | Maia | Different brands, tone must not mix | This workspace |
