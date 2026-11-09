@@ -98,7 +98,7 @@ All connectors come from Maia's claude.ai account, so they work in Cowork and in
 | Gmail, Google Calendar, Google Drive | Maia's mail and calendar | Read; drafts only |
 
 ## Regulars and Lupulus are separate
-Never load the lupulus skills here and never use Lupulus tone, colors, Canva folder (FAHadrCuEKU) or Savee boards. Lupulus has its own project.
+Never load the lupulus skills here and never use Lupulus tone, colors, Canva folder (FAHadrCuEKU) or Savee boards. Lupulus has its own project. Before filing, moving or editing any Canva design, look at its thumbnail, not just the title: untitled designs can be Lupulus (a hop water can was once misfiled as Regulars).
 
 ## Weekly rhythm (Maia works 09:00 to 15:00)
 1. Monday: read #gtm-csm and #gtm-marketing, update TASKS.md and the HQ page, propose the week's plan. Maia posts it in the "Happy Monday" thread.
