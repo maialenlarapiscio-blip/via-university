@@ -18,6 +18,23 @@ One workspace, two ways in. Both read the same files, the same skills and the sa
 2. **Friday 13:52, Regulars weekly review:** "Run step 5 of regulars-marketing-agent. Ask me for the numbers, compare with 05-results.md and propose two changes."
 3. **First Monday of the month 10:13, Regulars monthly:** "Run marketing:competitive-brief and marketing:performance-report. Update 04-competitors.md and 05-results.md."
 
+## First test (run these once after setup)
+If the answers feel generic, the file paths in CLAUDE.md need to be more explicit.
+1. "Using the Regulars Brain, tell me the three biggest missed opportunities in my current work."
+2. "Read my priorities and tasks. What is likely to fall through the cracks this week?"
+3. "Look at my files and tell me what I'm overcomplicating."
+
+## Keep it alive
+1. Monday: update PRIORITIES.md (Claude proposes, you approve).
+2. When Alex or HC decides something: "Add this to the decisions log: [decision]".
+3. When something is published: "Move [piece] to archive".
+4. When a draft misses your standard: "Update the writing voice skill with this example".
+5. Don't add everything at once. Add a file only when you catch yourself explaining it to Claude twice.
+
+## Thinking partner
+1. "I'm thinking through [problem]. Don't write anything yet. Ask me the questions that would help me think it through, using what you know about Regulars and Alex."
+2. "I have 90 minutes. What's the highest leverage thing I could work on?"
+
 ## Prompts that work
 1. "What's on today?"
 2. "Make the welcome post for [venue]."
