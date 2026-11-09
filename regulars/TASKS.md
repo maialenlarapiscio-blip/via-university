@@ -6,9 +6,9 @@ Every task has: what Alex (or HC) actually said, and when it counts as done.
 
 ## Today
 ### 1. Pinned Instagram post 1, "We're Regulars"
-1. **Due:** before it goes live, 10 Nov 08:30.
+1. **Due:** moved to 10 Nov 20:30 (was 08:30). Alex's caption and the new image must be in FeedHive by 20:00.
 2. **Alex said:** "Wrong background text. Can we edit to 'Every Visit Matters.'?" / "Darken the image (reduce brightness -80) to make the Regulars stand out. Do you think the Regulars logo is too small?" / "I'd like to give [the caption] a quick edit tomorrow morning if that's okay?"
-3. **Done when:** background text is "Every Visit Matters.", brightness is at -80, logo size checked, Alex has edited the caption, and the post time is moved if his edit comes after 08:30.
+3. **Done when:** background text is "Every Visit Matters.", brightness is at -80, logo size checked, Alex's caption is in FeedHive, and the new image is uploaded.
 
 ### 2. Instagram connected in FeedHive
 1. **HC said:** "Did we fix the instagram problem?"
