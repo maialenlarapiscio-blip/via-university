@@ -36,6 +36,7 @@ Read the others when the task needs them:
 8. `regulars/brain/09-how-alex-thinks.md`: Alex's questions, style and review checklist.
 
 9. `regulars/brain/10-decisions-log.md`: decisions and rejected options.
+10. `regulars/brain/11-outreach-playbook.md`: the Twenty CRM outreach playbook (targets, daily blocks, rules, first lines, call script).
 
 If a skill contradicts the Brain, the Brain wins. Tell Maia so the skill gets fixed.
 
@@ -70,6 +71,7 @@ Before showing Maia any draft, run the checklist in section 7 of `09-how-alex-th
 | Job | Skill |
 |---|---|
 | Weekly routine, plan, Friday review | regulars-marketing-agent |
+| Daily Twenty outreach: research, stop checks, notes and first lines, call prep | regulars-twenty-outreach |
 | Sounding like Regulars, with real approved examples | regulars-writing-voice (load before any copy) |
 | Any copy: posts, hooks, reels, newsletter | regulars-content-principles (apply silently) |
 | New partner welcome post | regulars-new-partner-post |

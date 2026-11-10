@@ -12,7 +12,9 @@ Rule: Claude only uses facts marked CONFIRMED. PENDING facts go in [brackets] an
 | Gift cards page | getregulars.com/platform/gift-cards | CONFIRMED | | Oct 2026 |
 | Guest collection page | getregulars.com/collection | CONFIRMED | | Oct 2026 |
 | Active cities | [Aarhus, Copenhagen, Odense, Aalborg?] | PENDING | | |
-| Plan prices | [ ] | PENDING | | |
+| Starting price (only if pushed, never in first contact) | "It starts at 179 kr a month, depending on what you need." | CONFIRMED | Outreach playbook | 6 Nov 2026 |
+| Social proof names (outreach) | Aamanns, Epicurus (Copenhagen); Jakobsen & Co, Nøgen, CARTER (Aarhus) | CONFIRMED | Outreach playbook | 6 Nov 2026 |
+| Written options page | getregulars.com/proposal | CONFIRMED | Outreach playbook | 6 Nov 2026 |
 
 ## Client stories (for Success Stories)
 Told by Alex in the Maia x Regulars chat. Need the client's permission before publishing.

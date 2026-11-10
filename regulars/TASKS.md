@@ -19,12 +19,13 @@ Every task has: what Alex (or HC) actually said, and when it counts as done.
 1. **Done when:** the 10:30 welcome post in FeedHive is approved.
 
 ## Twenty CRM setup (before your first outreach day)
-Source: outreach playbook email, 10 Nov. Full playbook: Google Doc 1juglSnL0Yhh-QLIUYmYTrVB3yHiBC5uWuMAw0oDKmIw (shared with maia@getregulars.com; text not yet in the Brain).
+Source: Maia's Outreach Playbook (Magnus Damiri, 6 Nov), now in `regulars/brain/11-outreach-playbook.md`.
 1. Log in at crm.getregulars.com with maia@getregulars.com.
-2. Connect Gmail in Twenty: Settings → Accounts → Add account → Google.
-3. Send the sender any email that includes your Gmail signature, so it can be added to your drafts.
-4. Read the playbook once, end to end.
-5. **Done when:** the first five emails are sent together with the sender, in Call Center → Call mode.
+2. Connect Gmail in Twenty: Settings → Accounts → Add account → Google, with maia@getregulars.com.
+3. Email any message with your Gmail signature to **hc@getregulars.com**.
+4. Check HC has added you to the weekly allocation (50 companies, every Monday 07:00).
+5. Read the playbook and the Regulars ringeguide once, out loud.
+6. **Done when:** the first five emails are sent together, in Call Center → Call mode.
 
 ## This week
 ### 4. Pinned posts 2 "Why" and 3 "How"

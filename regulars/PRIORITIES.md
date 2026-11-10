@@ -9,4 +9,6 @@ Updated every Monday. Ranked: when two things compete for time, the higher one w
 5. **LinkedIn rhythm** through the LinkedIn posts thread, posts by Alex or the team.
 6. **Clean the tools**: Instagram reconnected in FeedHive, Brevo drafts archived, Canva root sorted.
 
+**Maia's three for today (10 Nov):** 1. pinned post 1 ready in FeedHive before 15:00; 2. outreach: Twenty setup, then first emails; 3. the promotional kit.
+
 Not a priority right now: Christmas content (Alex: "don't focus on Christmas yet"), Pinterest, Lupulus.

@@ -48,7 +48,7 @@ Before writing anything, answer: **what should the reader do next, and why is th
 1. **Volume:** 10 outreach emails a day, 50 a week.
 2. **How:** Twenty writes the draft with a demo card in the venue's own brand and books the follow-up call 7 days later. Maia adds **one personal line** and presses Send.
 3. **Claude's job:** research the venue and write that one personal line (something only this venue has: its story, a dish, a recent opening, a press mention). Never rewrite Twenty's draft.
-4. **Rules for chains and existing customers:** in the playbook; [add from the Google Doc].
+4. **All rules, the call script and objections:** see `11-outreach-playbook.md`. Social proof is customer names in their city, never percentages. No prices in first contact (if pushed: from 179 kr a month). High-end and Michelin go to Alex.
 
 Before Twenty (still valid as style):
 1. **Sequence:** first email plus one or two follow ups. Every follow up brings a new angle, never a repeat.
