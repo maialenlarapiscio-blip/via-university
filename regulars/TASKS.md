@@ -18,6 +18,14 @@ Every task has: what Alex (or HC) actually said, and when it counts as done.
 ### 3. Approve today's welcome post
 1. **Done when:** the 10:30 welcome post in FeedHive is approved.
 
+## Twenty CRM setup (before your first outreach day)
+Source: outreach playbook email, 10 Nov. Full playbook: Google Doc 1juglSnL0Yhh-QLIUYmYTrVB3yHiBC5uWuMAw0oDKmIw (shared with maia@getregulars.com; text not yet in the Brain).
+1. Log in at crm.getregulars.com with maia@getregulars.com.
+2. Connect Gmail in Twenty: Settings → Accounts → Add account → Google.
+3. Send the sender any email that includes your Gmail signature, so it can be added to your drafts.
+4. Read the playbook once, end to end.
+5. **Done when:** the first five emails are sent together with the sender, in Call Center → Call mode.
+
 ## This week
 ### 4. Pinned posts 2 "Why" and 3 "How"
 1. **Alex said:** "Up for creating three simple images and captions? Any nice picture, but you decide." Three separate posts, not a carousel. Speak to owners.

@@ -44,6 +44,13 @@ Before writing anything, answer: **what should the reader do next, and why is th
 5. **Frequency:** to agree with HC and Alex. Alex thinks weekly "is a lot" because HC already talks to clients often.
 
 ## Email: outreach to new leads
+**Where it happens: Twenty CRM (crm.getregulars.com), Call Center → Call mode.** If it isn't in Twenty, it didn't happen.
+1. **Volume:** 10 outreach emails a day, 50 a week.
+2. **How:** Twenty writes the draft with a demo card in the venue's own brand and books the follow-up call 7 days later. Maia adds **one personal line** and presses Send.
+3. **Claude's job:** research the venue and write that one personal line (something only this venue has: its story, a dish, a recent opening, a press mention). Never rewrite Twenty's draft.
+4. **Rules for chains and existing customers:** in the playbook; [add from the Google Doc].
+
+Before Twenty (still valid as style):
 1. **Sequence:** first email plus one or two follow ups. Every follow up brings a new angle, never a repeat.
 2. **Structure:** one personal line about the venue, what they gain, how it works in three steps, CTA for a short call.
 3. **Alex's style:** remove fluff and repetition, value first, clear CTA.
