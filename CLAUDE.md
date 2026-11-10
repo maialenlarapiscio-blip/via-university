@@ -95,6 +95,7 @@ All connectors come from Maia's claude.ai account, so they work in Cowork and in
 | Canva folder Regulars (FAHadjD2yAU) | 01 Brand (FAHadh9zzq8), 02 Social (FAHadhrx2Gw), 03 Print and posters (FAHadmBfRhM), 00 To review (FAHadmyDo1Q) | New Regulars designs go here. Never the Lupulus folder. |
 | Brevo, list 30 "Regulars Newsletter" | Client newsletters, sender HC | Drafts only |
 | Twenty CRM (crm.getregulars.com) | All outreach: Call Center → Call mode, 10 emails a day | Maia sends from Twenty. Claude writes the one personal line per venue. If it isn't in Twenty, it didn't happen. |
+| Firecrawl (via Composio) | Reads public websites: venue research for outreach, competitor pages | Public pages only, never the CRM or dashboard. Small cost per page, so no bulk crawls without asking Maia. |
 | FeedHive | Scheduling | No API on the current plan: give Maia final caption and image, she schedules |
 | Savee boards starting with "Regulars" | Visual references | Never the Lupulus boards |
 | Regulars HQ page: https://claude.ai/artifact/V6XEsY1owuaA168B5Bg9u2 | Live task list (database collection `tasks`) | Keep it in sync with `regulars/TASKS.md` |

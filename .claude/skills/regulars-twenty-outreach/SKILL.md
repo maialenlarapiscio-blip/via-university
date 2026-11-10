@@ -8,6 +8,7 @@ description: "Prepare Maia's daily Twenty CRM outreach the way the playbook asks
 Source of truth: `regulars/brain/11-outreach-playbook.md`. Read it first. This skill does the research and writing so Maia's 75 minute email block takes about 30. **It never sends, never presses Twenty buttons and never edits Twenty's email body.** Maia presses the buttons and Send.
 
 ## Input
+If the Twenty connector is active, read Maia's Call mode list and briefs directly (list tasks and companies, read only; never press buttons or change records). Otherwise:
 Maia pastes, for each company: the name, and whatever the Call mode brief shows (city, website, contact, any ⚠️ or 🔗 flags, Tidligere kontakt). A list of names and cities also works.
 
 ## For each company, in order
@@ -16,7 +17,7 @@ Maia pastes, for each company: the name, and whatever the Call mode brief shows 
    2. 🔗 Chain called before or earlier contact under Tidligere kontakt → "Read history; maybe Already contacted";
    3. the venue is high-end, Michelin, or a group where we know the owner → "Send to SDR → Alex, with this note: …" (write the note);
    4. Do not contact, or another seller owns it → "Skip".
-2. **Research (2 to 3 minutes' worth):** website, Instagram, booking button. Find what they sell, who owns it, which booking or loyalty system they use, and anything recent (new opening, menu, press). Use only what you actually found; say "not found" otherwise. Never invent.
+2. **Research (2 to 3 minutes' worth):** use Firecrawl (FIRECRAWL_SCRAPE on the venue's website, FIRECRAWL_SEARCH for news or a new opening; public pages only, about $0.003 a page) plus the venue's Instagram and booking button. Find what they sell, who owns it, which booking or loyalty system they use, and anything recent (new opening, menu, press). Use only what you actually found; say "not found" otherwise. Never invent.
 3. **Contact:** owner or manager by name if you found one; otherwise say "use info@, look for the owner".
 4. **Language:** Danish venue → DA, unless the owner clearly writes English.
 5. **Note for this call** (for Twenty): one or two lines, the fact plus the system they use.
